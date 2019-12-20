@@ -19,9 +19,9 @@
 	<!-- dataSource는 MySQL과 연결을 담당한다. DataSource는 JDBC 커넥션을 처리하는 기능을 가지고 있기에 DB와 연동하는 작업에 반드시 필요하다.-->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://localhost:3306/cptree"/>
-		<property name="username" value="root"/>
-		<property name="password" value="hello2ket"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/cptree?useSSL=false"/>
+		<property name="username" value="cptreeadmin"/>
+		<property name="password" value="cptreeadmin"/>
 	</bean>
 	
 	<!-- mybatis SqlSessionFactoryBean context-mapper.xml에 있던거 복사 후 수정함-->
