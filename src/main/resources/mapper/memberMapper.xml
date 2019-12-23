@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.cp.cptree.mapper.memberMapper">
+
+<!-- mybatis-config.xml의 typeAlias에 등록안했다면 
+	<select id="selectMember" resultType="com.cp.cptree.dto.memberVo">
+		SELECT USER_ID, USER_PW, USER_CHAR FROM CPTREE
+	</select>
+	이렇게 해야한다.
+-->
+	<select id="selectMember" resultType="memberVo">
+		SELECT USER_ID, USER_PW, USER_CHAR FROM CPTREE
+	</select>
+</mapper>
+
+<!-- Mapper.xml은 쿼리문을 입력하는 것.
+보통 테이블당 1개의 mapper.xml을 작성한다.지금은 <mapper>태그에 namespace만 입력해둔다 -->

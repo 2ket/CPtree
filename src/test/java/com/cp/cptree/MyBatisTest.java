@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations= {"file:src/main/webapp/WEB-INF/spring/**/root-context.xml"})
-public class MyBatisTest {
+public class MyBatisTest { //session확인
 	@Inject
 	private SqlSessionFactory sqlFactory;
 	

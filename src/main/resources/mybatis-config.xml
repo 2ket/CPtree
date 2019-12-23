@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+	<configuration>
+		<typeAliases>
+			<typeAlias type="com.cp.cptree.MemberVo" alias="memberVo"/>
+		</typeAliases>
+		<!-- memberMapper.xml에서 MemberVo클래스를 alias부분에 지정한 이름인 memberVo로 사용하기 위해 -->
+		
+	</configuration>
+	
+	<!-- 여기에 추후 <typeAliases>태그를 통해 VO클래스를 등록할것.
+	이렇게 등록하면 mapper.xml에서 VO클래스를 mybatis-config.xml 등록한 이름으로 사용할 수 있음 -->

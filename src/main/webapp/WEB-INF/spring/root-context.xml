@@ -32,4 +32,11 @@
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg index="0" ref="sqlSessionFactory"/>
 	</bean>
+	
+	<!-- bean 등록 -->
+		<!-- MemberDaoImpl에 @Repository 어노테이션이 설정되었더라도 스프링에서 해당 패키지를 스캔하지 않으면 스프링 빈으로 등록되지 않는다.
+		그렇기에 root-context.xml에 빈 등록을 해야한다. -->
+	<context:component-scan base-package="com.cp.cptree.dao"></context:component-scan>
+	<context:component-scan base-package="com.cp.cptree.service"></context:component-scan>
+	
 </beans>

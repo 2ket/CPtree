@@ -34,7 +34,7 @@
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="warn" />
+		<priority value="info" /> <!-- log4j로그 설정하려고 warn에서 info로 바꿈 -->
 		<appender-ref ref="console" />
 	</root>
 	
