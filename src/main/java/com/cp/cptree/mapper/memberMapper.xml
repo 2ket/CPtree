@@ -11,8 +11,8 @@
 	</select>
 	이렇게 해야한다.
 -->
-	<select id="selectMember" resultType="memberVo">
-		SELECT USER_ID, USER_PW, USER_CHAR FROM USER_LIST
+	<select id="selectMember" resultType="com.cp.cptree.dto.memberVo">
+		SELECT USER_ID, USER_PW, USER_CHAR FROM CPTREE
 	</select>
 </mapper>
 

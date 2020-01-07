@@ -31,6 +31,7 @@
 		<td>아이템 2 구매</td>
 		<td>-10</td>
 	</tr>
+ 
 	<c:forEach items="${memberList }" var="member">
 	<tr>
 		<td>${member.user_id }</td>
@@ -39,6 +40,7 @@
 		<td>00</td>
 	</tr>
 	</c:forEach>
+
 	<tr>
 		<th>Total</th>
 		<td></td>

@@ -24,6 +24,11 @@ public class MemberVo {
 	public void setUser_char(String user_char) {
 		this.user_char = user_char;
 	}
-	
+	/*
+	@Override
+	public String toString() {
+		return "MemberVo [user_id=" + user_id + ", user_pw=" + user_pw + ", user_char=" + user_char + "]";
+	}
+	*/
 	
 }

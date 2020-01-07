@@ -4,7 +4,7 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 	<configuration>
 		<typeAliases>
-			<typeAlias type="com.cp.cptree.MemberVo" alias="memberVo"/>
+			<typeAlias type="com.cp.cptree.dto.MemberVo" alias="memberVo"/>
 		</typeAliases>
 		<!-- memberMapper.xml에서 MemberVo클래스를 alias부분에 지정한 이름인 memberVo로 사용하기 위해 -->
 		

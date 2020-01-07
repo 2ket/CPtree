@@ -61,9 +61,11 @@ public class HomeController {
 	@RequestMapping(value = "/viewCP", method = RequestMethod.GET)
 	public String viewCP(Locale locale, Model model) throws Exception{
 //		logger.info("viewCP");
+		System.out.println("왜 안돼;");
 		List<MemberVo> memberList = service.selectMember();
+		System.out.println(memberList);
 		model.addAttribute("memberList", memberList);
-		
+		System.out.println(model);
 		return "viewCP";
 	}
 }
